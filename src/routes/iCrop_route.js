@@ -1,6 +1,8 @@
 import {motion} from "framer-motion";
 import ICropComponent from "../components/page_components/iCrop_component"
 import ErntenComponent from "../components/page_components/ernte_component"
+import ReactAudioPlayer from "react-audio-player";
+import sound from "../voices/[06] Bewässern - Antwort.wav";
 
 export default function ICrop() {
 
@@ -21,6 +23,11 @@ export default function ICrop() {
             >
                 <ErntenComponent state="pre" />
             </motion.div>
+            <ReactAudioPlayer
+                src={sound}
+                autoPlay
+                volume={0.4}
+            />
         </>
     );
 }

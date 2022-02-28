@@ -1,6 +1,8 @@
 import {motion} from "framer-motion";
 import PosAgrComponent from "../components/page_components/posAgr_component"
 import EmiDungComponent from "../components/page_components/emiDung_component"
+import sound from "../voices/[02] Feld vorbereiten - Antwort.wav";
+import ReactAudioPlayer from "react-audio-player";
 
 export default function PosAgr() {
     return(
@@ -20,6 +22,11 @@ export default function PosAgr() {
             >
                 <EmiDungComponent state="pre"/>
             </motion.div>
+            <ReactAudioPlayer
+                src={sound}
+                autoPlay
+                volume={0.4}
+            />
         </>
     );
 }
