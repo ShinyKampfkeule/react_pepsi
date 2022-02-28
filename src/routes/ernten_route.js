@@ -1,6 +1,8 @@
 import {motion} from "framer-motion";
 import ErntenComponent from "../components/page_components/ernte_component"
 import FinalComponent from "../components/page_components/schluss_component"
+import ReactAudioPlayer from "react-audio-player";
+import sound from "../voices/[08] Ernten - Antwort.wav";
 
 export default function Ernten() {
     return(
@@ -20,6 +22,11 @@ export default function Ernten() {
             >
                 <FinalComponent state="pre" />
             </motion.div>
+            <ReactAudioPlayer
+                src={sound}
+                autoPlay
+                volume={0.4}
+            />
         </>
     );
 }
