@@ -9,13 +9,13 @@ export default function Ernten() {
         <>
             <motion.div
                 animate={{x: 0}}
-                exit={{x: -1920}}
+                exit={{x: "-100%"}}
                 transition={{duration: 1}}
             >
                 <ErntenComponent />
             </motion.div>
             <motion.div
-                initial={{x: 1920}}
+                initial={{x: "100%"}}
                 exit={{x: 0}}
                 transition={{duration: 1}}
                 className="pageContainer"

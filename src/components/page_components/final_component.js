@@ -1,6 +1,6 @@
 import Video from "../../components/Video/video";
 import ContentContainer from "../../components/ContentContainer/contentContainer";
-import video from "../../videos/End_Screen_New.mp4";
+import video from "../../videos/EndScreenRAW.mp4";
 import Thumb from "../../images/ThumbFinal.png";
 import {useNavigate} from "react-router-dom";
 import {Redirect} from "react-router";
@@ -24,7 +24,7 @@ export default function FinalFinalComponent({state}) {
         return(
             <div className="z-Index">
                 <img src={Thumb} alt="Farm" className="ThumbImage"/>
-                <ContentContainer ownClass="rightContainer" text1="ERNEUT" text2="STARTEN" nextRoute="NewStart" final={true} />
+                <ContentContainer ownClass="rightContainer" text1="VIELEN DANK" text2="ERNEUT STARTEN" nextRoute="NewStart" final={true} />
             </div>
         );
     } else {
@@ -33,7 +33,7 @@ export default function FinalFinalComponent({state}) {
                 <p className="textHeadingFinal">Vielen Dank für deine Hilfe</p>
                 <Video video={video}/>
                 <img src={Thumb} alt="Farm" className="ThumbImage"/>
-                <ContentContainer ownClass="rightContainer" text1="ERNEUT" text2="STARTEN" nextRoute="NewStart" final={true} />
+                <ContentContainer ownClass="rightContainer" text1="VIELEN DANK" text2="ERNEUT STARTEN" nextRoute="NewStart" final={true} />
             </div>
         )
     }

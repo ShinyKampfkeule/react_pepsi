@@ -1,7 +1,6 @@
-import {motion} from "framer-motion";
 import PosAgrComponent from "../components/page_components/posAgr_component"
-import sound from "../voices/[01] Feld vorbereiten - Frage.wav";
 import ReactAudioPlayer from "react-audio-player";
+import sound from "../voices/[01] Feld vorbereiten - Frage.wav"
 
 export default function PosAgrPre() {
     return(
