@@ -13,8 +13,7 @@ import Ernten from "./routes/ernten_route";
 import SchlussPre from "./routes/schluss_pre_route";
 import Schluss from "./routes/schluss_route";
 import End from "./routes/final_route";
-// import sound from "./music/Progress .wav";
-import sound from "./music/Hopeful For.wav";
+import sound from "./music/Progress .wav";
 import ReactAudioPlayer from "react-audio-player";
 
 function App() {
