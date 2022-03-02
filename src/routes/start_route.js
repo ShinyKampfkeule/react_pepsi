@@ -1,6 +1,8 @@
 import {motion} from "framer-motion";
 import StartComponent from "../components/page_components/start_component"
 import PosAgrComponent from "../components/page_components/posAgr_component"
+import ReactAudioPlayer from "react-audio-player";
+import sound from "../music/FieldMeadowLightBr BT020801.wav";
 
 export default function Start({state}) {
     if (state === "first") {
@@ -21,6 +23,12 @@ export default function Start({state}) {
                 >
                     <PosAgrComponent state="pre" />
                 </motion.div>
+                <ReactAudioPlayer
+                    src={sound}
+                    autoPlay={true}
+                    volume={1}
+                    loop={true}
+                />
             </>
         );
     } else {
@@ -41,6 +49,12 @@ export default function Start({state}) {
                 >
                     <PosAgrComponent state="pre" />
                 </motion.div>
+                <ReactAudioPlayer
+                    src={sound}
+                    autoPlay={true}
+                    volume={1}
+                    loop={true}
+                />
             </>
         );
     }

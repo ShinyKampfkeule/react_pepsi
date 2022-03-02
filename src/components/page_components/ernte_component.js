@@ -1,13 +1,13 @@
 import Video from "../../components/Video/video";
 import ContentContainer from "../../components/ContentContainer/contentContainer";
-import video from "../../videos/HarvestPotatos_1.mp4";
+import video from "../../videos/Oeko.mp4";
 import Thumb from "../../images/ThumbnailHarvest.png"
 import map from "../../images/Deutschland_Lage_von_Bayern.svg"
 
 export default function ErntenComponent({state}) {
     if (state === "pre") {
         return(
-            <div className="z-Index">
+            <div className="maxSize">
                 <img src={Thumb} alt="Ernte" className="ThumbImage"/>
                 <ContentContainer ownClass="leftContainer" textHead="Zustand des Ökosystems" questionHead="Wie geht PepsiCo damit um?" text1="Die Landwirtschaft trägt zu den größten ökologischen und sozialen Herausforderungen der Welt bei." colorCode="#40372C" />
                 <ContentContainer ownClass="rightContainer" text1="ERNTE DEINE" text2="KARTOFFELN" nextRoute="Ernten"/>
@@ -15,8 +15,8 @@ export default function ErntenComponent({state}) {
         );
     } else {
         return(
-            <div className="z-Index">
-                <Video video={video} style={{transform: "scaleX(-1)"}} />
+            <div className="maxSize">
+                <Video video={video} />
                 <img src={Thumb} alt="Positive Agriculture" className="ThumbImage"/>
                 <ContentContainer ownClass="leftContainer"
                                   textHead="Zustand des Ökosystems"

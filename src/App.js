@@ -12,10 +12,21 @@ import ErntenPre from "./routes/ernten_pre_route";
 import Ernten from "./routes/ernten_route";
 import SchlussPre from "./routes/schluss_pre_route";
 import Schluss from "./routes/schluss_route";
-import End from "./routes/final_route"
+import End from "./routes/final_route";
+// import sound from "./music/Progress .wav";
+import sound from "./music/Hopeful For.wav";
+import ReactAudioPlayer from "react-audio-player";
 
 function App() {
     const location = useLocation();
+    let music = <></>
+    if (location.pathname !== '/') {
+        if (location.pathname !== '/NewStart') {
+            music = <ReactAudioPlayer src={sound} autoPlay={true} loop={true} volume={0.2}/>
+        }
+    } else {
+        music = <></>
+    }
     return (
         <div className="App">
             <AnimatePresence exitBeforeEnter initial={false}>
@@ -36,6 +47,7 @@ function App() {
                     <Route path="/Test" element={<End state="pre" />} />
                 </Routes>
             </AnimatePresence>
+            {music}
         </div>
     );
 }

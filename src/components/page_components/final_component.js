@@ -22,15 +22,14 @@ export default function FinalFinalComponent({state}) {
     let navigate = useNavigate()
     if (state === "pre") {
         return(
-            <div className="z-Index">
+            <div className="maxSize">
                 <img src={Thumb} alt="Farm" className="ThumbImage"/>
                 <ContentContainer ownClass="rightContainer" text1="VIELEN DANK" text2="ERNEUT STARTEN" nextRoute="NewStart" final={true} />
             </div>
         );
     } else {
         return (
-            <div className="z-Index">
-                <p className="textHeadingFinal">Vielen Dank für deine Hilfe</p>
+            <div className="maxSize">
                 <Video video={video}/>
                 <img src={Thumb} alt="Farm" className="ThumbImage"/>
                 <ContentContainer ownClass="rightContainer" text1="VIELEN DANK" text2="ERNEUT STARTEN" nextRoute="NewStart" final={true} />
