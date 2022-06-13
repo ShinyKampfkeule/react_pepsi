@@ -21,7 +21,7 @@ function App() {
     let music = <></>
     if (location.pathname !== '/') {
         if (location.pathname !== '/NewStart') {
-            music = <ReactAudioPlayer src={sound} autoPlay={true} loop={true} volume={0.2}/>
+            music = <ReactAudioPlayer src={sound} autoPlay={true} loop={true} volume={0.1}/>
         }
     } else {
         music = <></>

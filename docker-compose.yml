@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  react:
+    image: docker.io/library/agripeps
+    ports:
+      - "1337:80"
